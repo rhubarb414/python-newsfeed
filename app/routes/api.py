@@ -147,7 +147,6 @@ def update(id):
 
 @bp.route('/posts/<id>', methods=['DELETE'])
 def delete(id):
-    data = request.get_json()
     db = get_db()
 
     try:
